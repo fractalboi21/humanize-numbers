@@ -40,7 +40,7 @@ function Output(props) {
           />
           <HumanCardItem
             title={'Number of digits:'}
-            display={props.number.toString().length}
+            display={`${props.number.toString().length} digit`}
             desc={"Counts the number of digits entered by the user"}
 
 
@@ -48,7 +48,7 @@ function Output(props) {
           <HumanCardItem
             title={'Numbers to words:'}
             display={numToWords.toWords(props.number)}
-            desc={"Convert a number to a US English word representation."}
+            desc={"Converts a number to a US English word representation."}
           />
         </>
       )}
@@ -104,6 +104,8 @@ export default function App() {
         val={0}
       />
       <Output number={number} />
+      <p>App version: 0.0.10</p>
+      
     </div>
   );
 }
