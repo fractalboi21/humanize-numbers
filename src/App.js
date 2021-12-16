@@ -15,6 +15,7 @@ function Error() {
         😭.
       </p>
       <h3>This app does not support any other datatypes other than numbers.</h3>
+      
     </>
   );
 }
@@ -53,8 +54,8 @@ export default function App() {
   console.log(number);
   return (
     <div>
-      <h1 style={{textAlign:"center"}}>Humanize numbers</h1>
-      <p style={{backgroundColor:" #D1D1D1",borderRadius:15,padding:15}}>
+      <h1 style={{ textAlign: 'center',backgroundColor:"black",color:"white",borderRadius:5, paddingTop:25, paddingBottom:25}}>Humanize numbers</h1>
+      <p style={{ backgroundColor: ' #D1D1D1', borderRadius: 15, padding: 15 }}>
         This application converts huge numbers into human readable format.
       </p>
 
