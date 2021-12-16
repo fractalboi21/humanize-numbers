@@ -6,13 +6,9 @@ import WebFont from 'webfontloader';
 let numToWords = require('number-to-words');
 let approxNum = require('approximate-number');
 
-function Output(props) {
-  return (
+function HumanCard() {
+  return(
     <>
-      {props.number === '' ? (
-        <Error />
-      ) : (
-        <>
           <HumanCardItem
             title={'Human readable format:'}
             display={approxNum(props.number).toUpperCase()}
@@ -24,6 +20,35 @@ function Output(props) {
           <HumanCardItem
             title={'Numbers to words:'}
             display={numToWords.toWords(props.number)}
+          />
+        </>
+  );
+}
+
+
+function Output(props) {
+  return (
+    <>
+      {props.number === '' ? (
+        <Error />
+      ) : (
+        <>
+          <HumanCardItem
+            title={'Human readable format:'}
+            display={approxNum(props.number).toUpperCase()}
+            desc={"A simple way to format huge numbers as human readable strings."}
+          />
+          <HumanCardItem
+            title={'Number of digits:'}
+            display={props.number.toString().length}
+            desc={"Counts the number of digits entered by the user"}
+
+
+          />
+          <HumanCardItem
+            title={'Numbers to words:'}
+            display={numToWords.toWords(props.number)}
+            desc={"Convert a number to a US English word representation."}
           />
         </>
       )}
