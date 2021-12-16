@@ -70,6 +70,7 @@ export default function App() {
         }}
         min={-99999999}
         max={9999999}
+        val={0}
       />
       <Output number={number} />
     </div>
