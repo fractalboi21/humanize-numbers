@@ -3,15 +3,13 @@ import './style.css';
 import HumanCardItem from './components/HumanCardItem';
 import Error from './components/Error';
 import WebFont from 'webfontloader';
-
 let numToWords = require('number-to-words');
 let approxNum = require('approximate-number');
 
 function Output(props) {
   return (
     <>
-      {/* props.number === ''*/}
-      {true ? (
+      {props.number === '' ? (
         <Error />
       ) : (
         <>
