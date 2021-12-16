@@ -10,7 +10,8 @@ let approxNum = require('approximate-number');
 function Output(props) {
   return (
     <>
-      {props.number === '' ? (
+      {/* props.number === ''*/}
+      {true ? (
         <Error />
       ) : (
         <>
