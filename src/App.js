@@ -7,24 +7,23 @@ let numToWords = require('number-to-words');
 let approxNum = require('approximate-number');
 
 function HumanCard() {
-  return(
+  return (
     <>
-          <HumanCardItem
-            title={'Human readable format:'}
-            display={approxNum(props.number).toUpperCase()}
-          />
-          <HumanCardItem
-            title={'Number of digits:'}
-            display={props.number.toString().length}
-          />
-          <HumanCardItem
-            title={'Numbers to words:'}
-            display={numToWords.toWords(props.number)}
-          />
-        </>
+      <HumanCardItem
+        title={'Human readable format:'}
+        display={approxNum(props.number).toUpperCase()}
+      />
+      <HumanCardItem
+        title={'Number of digits:'}
+        display={props.number.toString().length}
+      />
+      <HumanCardItem
+        title={'Numbers to words:'}
+        display={numToWords.toWords(props.number)}
+      />
+    </>
   );
 }
-
 
 function Output(props) {
   return (
@@ -36,19 +35,19 @@ function Output(props) {
           <HumanCardItem
             title={'Human readable format:'}
             display={approxNum(props.number).toUpperCase()}
-            desc={"A simple way to format huge numbers as human readable strings."}
+            desc={
+              'A simple way to format huge numbers as human readable strings.'
+            }
           />
           <HumanCardItem
             title={'Number of digits:'}
             display={`${props.number.toString().length} digit`}
-            desc={"Counts the number of digits entered by the user"}
-
-
+            desc={'Counts the number of digits entered by the user'}
           />
           <HumanCardItem
             title={'Numbers to words:'}
             display={numToWords.toWords(props.number)}
-            desc={"Converts a number to a US English word representation."}
+            desc={'Converts a number to a US English word representation.'}
           />
         </>
       )}
@@ -78,16 +77,6 @@ export default function App() {
       >
         Humanize numbers
       </h1>
-      <p
-        style={{
-          backgroundColor: 'black',
-          borderRadius: 5,
-          padding: 15,
-          color: 'white',
-        }}
-      >
-        This application converts huge numbers into human readable format.
-      </p>
 
       <input
         className={'input'}
@@ -105,7 +94,6 @@ export default function App() {
       />
       <Output number={number} />
       <p>App version: 0.0.10</p>
-      
     </div>
   );
 }
