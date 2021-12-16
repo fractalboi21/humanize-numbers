@@ -2,8 +2,6 @@ h1, p {
   font-family: Lato;
 }
 
-
-
 .input {
   width: 95%;
   margin-left: 2%;
@@ -11,4 +9,8 @@ h1, p {
   height: 50px;
   border-radius: 15px;
   padding: 2px;
+}
+
+.font-loader {
+  font-family: 'Chilanka';
 }

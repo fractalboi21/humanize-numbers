@@ -3,10 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "human-number": "1.0.6",
+    "approximate-number": "^2.1.0",
     "number-to-words": "1.2.4",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "short-number": "^1.0.7",
+    "webfontloader": "^1.6.28"
   },
   "scripts": {
     "start": "react-scripts start",
