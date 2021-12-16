@@ -1,0 +1,14 @@
+h1, p {
+  font-family: Lato;
+}
+
+
+
+.input {
+  width: 95%;
+  margin-left: 2%;
+  margin-right: 2%;
+  height: 50px;
+  border-radius: 15px;
+  padding: 2px;
+}
