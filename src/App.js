@@ -14,15 +14,15 @@ function Output(props) {
       ) : (
         <>
           <HumanCardItem
-            title={'👁️Human readable format:'}
+            title={'Human readable format:'}
             display={approxNum(props.number).toUpperCase()}
           />
           <HumanCardItem
-            title={'#️⃣Number of digits:'}
+            title={'Number of digits:'}
             display={props.number.toString().length}
           />
           <HumanCardItem
-            title={'🔤Numbers to words :'}
+            title={'Numbers to words:'}
             display={numToWords.toWords(props.number)}
           />
         </>
